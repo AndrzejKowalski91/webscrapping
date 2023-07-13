@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 url = "https://www.pepper.pl/"
 response = requests.get(url)
-soup = BeautifulSoup(response.text,"html parser")
+soup = BeautifulSoup(response.text,"html.parser")
 
 # ekstrakcja tekstu z paragrafów
 paragraphs = soup.find_all('p')
