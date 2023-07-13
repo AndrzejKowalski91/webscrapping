@@ -16,14 +16,14 @@ print("to jest img url:")
 for img in images:
     print(img['src'])
 
-# dane z  tabeli
-table = soup.find('table')
-rows = table.find_all ('tr')
-print("\ntable dane:")
-for row in rows:
-    cells = row.find_all('td')
-    for cell in cells:
-        print(cell.text)
+# # dane z  tabeli
+# table = soup.find('table')
+# rows = table.find_all ('tr')
+# print("\ntable dane:")
+# for row in rows:
+#     cells = row.find_all('td')
+#     for cell in cells:
+#         print(cell.text)
 
 #element css
 elements = soup.find_all(class_ = 'moja klasa')
